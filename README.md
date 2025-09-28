@@ -2,10 +2,14 @@
 
 MOSE (MOdular Signing and Encryption) is a Go library for signing and verifying data using ML-DSA-87 (mldsa87), a post-quantum signature scheme.
 
+It was made out of frustration with JOSE and the slowness in getting PQC standards for basic things.
+
+If you need to sign/check JSON data with PQC, this is it for now.
+
 ## Installation
 
 ```bash
-go get github.com/caprica/mose
+go get github.com/lpreimesberger/mose
 ```
 
 ## Usage
@@ -18,7 +22,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/caprica/mose"
+	"github.com/lpreimesberger/mose"
 	"github.com/cloudflare/circl/sign/mldsa/mldsa87"
 	"crypto/rand"
 )
@@ -60,7 +64,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/caprica/mose"
+	"github.com/lpreimesberger/mose"
 	"github.com/cloudflare/circl/sign/mldsa/mldsa87"
 	"crypto/rand"
 )
