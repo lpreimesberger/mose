@@ -1,4 +1,4 @@
-module mose
+module github.com/lpreimesberger/mose
 
 go 1.25
 
