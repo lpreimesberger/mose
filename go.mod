@@ -1,6 +1,6 @@
 module github.com/lpreimesberger/mose
 
-go 1.25
+go 1.24
 
 require (
 	github.com/cloudflare/circl v1.6.1
